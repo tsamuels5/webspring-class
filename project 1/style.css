@@ -139,8 +139,8 @@ margin: 0 auto;
     background-color: black; /* Matches the video section below it */
     color: white;
     text-align: center;
-    padding: 80px 40px;      /* Lots of padding to make the fact feel important */
-    border-top: 2px solid #b03c3c; /* Optional: A red line to match your theme */
+    padding: 80px 40px;     
+    border-top: 2px solid #b03c3c; 
 }
 
 .fact-bar p {

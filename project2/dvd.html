@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DVD | Memory Lane</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dvd-theme">
+
+    <main class="content-container">
+        <header class="memory-header">
+            <h1>The DVD Player</h1>
+            <p>My version of movie nights.</p>
+        </header>
+
+    <section id="Movies" class="parent">
+        <div class="div3">
+            <h3>PICK A MOVIE TO WATCH</h3>
+        </div>
+
+        <div class="div4">
+            <div class="dvdaligner">
+            <div class="dvdframe">
+            <img src="images/portable2.png" alt="Portable DVD Player">
+            <div class="dvdscreen">
+            <video id="video" src="" autoplay loop ></video>
+            </div>
+         </div>
+        </div>
+        </div>
+        
+
+        <!-- MOVIE OPTIONS-->
+         <div class="div5">
+            <div class="cover1" onclick="playScene('videos/barbie.mp4')">
+                <img src="images/barbie.png" alt="Barbie in the 12 Dancing Princesses">
+         </div>
+         </div>
+
+         <div class="div6">
+         <div class="cover2" onclick="playScene('videos/hsm2.mp4')">
+                <img src="images/hsm2.png" alt="High School Musical 2">
+         </div>
+         </div>
+
+         <div class="div7">
+         <div class="cover3" onclick="playScene('videos/princessdiaries.mp4')">
+                <img src="images/pdiaries.png" alt="Princess Diaries">
+                
+         </div>
+         </div>
+         
+         <div class="div1">
+            <p>I remember always looking forward to getting bootleg DVDs every Friday with my father from the seller who would drive by every week selling them from the back of his car.</p>
+         </div>
+         <div class="div2"> 
+            <p>These were a few movies I'd watch on my dvd player on repeat during the weekends as a child.</p>
+         </div>
+        </section>
+
+      
+    <!-- NAV to go back or keep exploring-->
+     <h2 class="nav-title">What's Next?</h2>
+<section class="split-nav">
+    <div class="nav-column">
+        <h2 class="nav-title">Keep Rewinding</h2>
+        <div class="mini-memory-grid">
+            <a href="avatar.html" class="mini-card">Avatar</a>
+            <a href="music.html" class="mini-card">Music</a>
+        </div>
+    </div>
+
+    <div class="nav-column present-column">
+        <a href="index.html" class="present-button">Go back to Present</a>
+    </div>
+</section>
+ </main>
+
+ <script>
+function playScene(videoSource) {
+    var video = document.getElementById('video');
+    video.src = videoSource;
+    video.play();
+
+}
+</script>
+</body>
+</html>

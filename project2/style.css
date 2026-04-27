@@ -70,7 +70,7 @@ body {
     padding: 80px 10%;
     background-color: #f9f9f900;
     display: grid;
-    /* This still keeps it responsive so it works on phones! */
+    /* This still keeps it responsive so it works on phones! AI */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
@@ -101,18 +101,18 @@ body {
 }
 
 .card h2 {
-    font-size: 28px; /* Fixed pixel size */
+    font-size: 28px; 
     margin-bottom: 15px;
     color: #222;
 }
 
 .card p {
-    font-size: 16px; /* Fixed pixel size */
+    font-size: 16px; 
     color: #666;
     line-height: 1.5;
 }
 
-/* This makes the grid transparent when it's used as a navigation footer */
+/* This makes the grid transparent when it's used as a navigation footer AI*/
 .subpage-nav {
     background-color: transparent !important;
     padding-top: 40px; 
@@ -131,10 +131,9 @@ body {
 }
 /* --- Avatar Theme --- */
 
-/* A soft, magical gradient background */
 .avatar{
     background: linear-gradient(135deg, #e8f5e9 0%, #fff9c4 100%);
-    color: #2e7d32; /* green text */
+    color: #2e7d32; 
     text-align: center;
 }
 
@@ -153,7 +152,6 @@ body {
 .memory-header h1 {
     font-size: 60px;
     margin-bottom: 10px;
-    /* This adds a little "fairy glow" to the text */
     text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
 }
 .avatar .memory-header p{
@@ -177,13 +175,13 @@ body {
 
     position: fixed; /* Stays in place even if you scroll */
     top: 50%;
-    transform: translateY(-50%); /* Perfectly centers them vertically */
+    transform: translateY(-50%); /*  centers them vertically */
     width: 200px;
     color: #ffd700;
     font-weight: bold;
     text-shadow: 0 0 10px #00d4ff;
     
-    /* The "DVD Style" hover logic */
+    /* The "DVD Style" hover*/
     opacity: 0; 
     transition: opacity 0.5s ease, transform 0.5s ease;
     pointer-events: none
@@ -194,13 +192,12 @@ body {
 
     position: fixed; /* Stays in place even if you scroll */
     top: 50%;
-    transform: translateY(-50%); /* Perfectly centers them vertically */
+    transform: translateY(-50%); 
     width: 200px;
     color: #ffd700;
     font-weight: bold;
     text-shadow: 0 0 10px #00d4ff;
     
-    /* The "DVD Style" hover logic */
     opacity: 0; 
     transition: opacity 0.5s ease, transform 0.5s ease;
     pointer-events: none
@@ -231,40 +228,39 @@ body {
     width: 250px;
     transform: translateY(-50%);
     
-    /* Styling */
+    
     color: #bc6945;
     font-weight: light;
     text-shadow: 0 0 10px #7f8587;
     line-height: 1.6;
     font-size: 20px;
     
-    /* The Reveal Logic */
+    /* reveals */
     opacity: 0;
     transition: opacity 0.4s ease, transform 0.4s ease;
-    pointer-events: none; /* Keeps it from blocking clicks */
+    pointer-events: none; 
 }
 
-/* 2. Position Water & Earth on the LEFT */
+/* Position Water & Earth on the left */
 .element-choice:nth-child(1) p,
 .element-choice:nth-child(3) p {
     left: 50px;
     text-align: left;
 }
 
-/* 3. Position Fire & Air on the RIGHT */
+/* Position Fire & Air on the right */
 .element-choice:nth-child(2) p,
 .element-choice:nth-child(4) p {
     right: 50px;
     text-align: right;
 }
 
-/* 4. THE TRIGGER: Show the text when the specific choice is hovered */
+/*Show the text when the specific choice is hovered */
 .element-choice:hover p {
     opacity: 1;
     transform: translateY(-50%) scale(1.05);
 }
 
-/* Make sure your grid container looks right */
 .elements {
     display: flex;
     justify-content: center;
@@ -282,7 +278,7 @@ body {
 .element-choice:hover img {
     opacity: 1;
     transform: scale(1.2);
-    filter: drop-shadow(0 0 10px #00d4ff); /* Neon glow like your other pages */
+    filter: drop-shadow(0 0 10px #00d4ff); 
 }
 
 .element-label {
@@ -312,14 +308,13 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    color: #ffd700; /* Classic "Gold" or "Yellow" subtitle color */
+    color: #ffd700; 
 }
 
 
 .dvd-theme .memory-header h1 {
     font-size: 60px;
     letter-spacing: 4px;
-    /* Neon Blue glow common in early 2000s tech */
     text-shadow: 0 0 15px #00d4ff; 
 }
 
@@ -374,13 +369,13 @@ text-align: center;
 .dvdaligner {
     display: flex;
     justify-content: center;
-    margin: -40px 0 -300px 40px; /* Centered with room above/below */
+    margin: -40px 0 -300px 40px; /* Centered with room above and below */
     width: 100%;
 }
 .dvdframe {
     position: relative;
-    width: 100%; /* This is the "Zoom" fix - adjust this % as needed */
-    max-width: 950px; /* Safety limit for big screens */
+    width: 100%; 
+    max-width: 950px; /* Limit for big screens */
     margin:0 auto;
     pointer-events: none; 
 }
@@ -392,7 +387,7 @@ text-align: center;
 }
 .dvdscreen {
     position: absolute;
-    /* Adjust these percentages to perfectly fit your specific PNG screen */
+    /* fit  PNG screen */
     top: 13%; 
     left: 12%;
     width: 62%;
@@ -404,7 +399,7 @@ text-align: center;
     align-items: center;
     overflow: hidden;
 }
-/* Ensures content inside the screen fits perfectly */
+/* Ensures content inside the screen fits */
 .dvdscreen img, .dvdscreen video {
     width: 100%;
     height: 100%;
@@ -429,7 +424,7 @@ text-align: center;
     margin-top: 50px;
 }
 
-/* THE HOVER EFFECT: Lifts the cover up */
+/* hover:*/
 .cover1:hover {
     transform: translateY(-10px);
 }
@@ -450,11 +445,11 @@ text-align: center;
     width: 110px;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.3s ease; /* This makes the lift smooth */
+    transition: transform 0.3s ease; 
     margin-top: 50px;
 }
 
-/* THE HOVER EFFECT: Lifts the cover up */
+
 .cover2:hover {
     transform: translateY(-10px);
 }
@@ -476,11 +471,11 @@ text-align: center;
     width: 110px;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.3s ease; /* This makes the lift smooth */
+    transition: transform 0.3s ease; 
     margin-top: 50px;
 }
 
-/* THE HOVER EFFECT: Lifts the cover up */
+
 .cover3:hover {
     transform: translateY(-10px);
 }
@@ -504,7 +499,7 @@ text-align: center;
 }
 
 
-/* Ensure the text fades in smoothly */
+/* Ensure the text fades in */
 .show-sides {
     opacity: 1;
     transition: opacity 0.5s ease;
@@ -535,7 +530,7 @@ text-align: center;
 /* --- Music Theme Styles --- */
 
 .music-theme {
-    background-color: #0f0f0f; /* Pitch black studio vibe */
+    background-color: #0f0f0f; 
     color: #ffffff;
 }
 
@@ -622,7 +617,7 @@ text-align: center;
     transition: all 0.4s ease-in-out;
 }
 
-/* 2. When the link is hovered, show the text */
+/* Show text when link is hovered */
 .music-link:hover .description {
     opacity: 1;
     transform: translateY(0);
@@ -647,7 +642,7 @@ text-align: center;
 }
 
 .nav-column .nav-title {
-    margin-top: -15px; /* Forces the 60px margin to go away */
+    margin-top: -15px; 
     margin-bottom: 20px;
     font-size: 24px;
     letter-spacing: 2px;
@@ -688,7 +683,7 @@ text-align: center;
     text-decoration: none;
     background-color: #ffffff;
     color: #000000 !important; /* Ensures text is visible */
-    padding: 15px 30px; /* Reduced padding for a better size */
+    padding: 15px 30px; /* padding for a better size */
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -696,14 +691,14 @@ text-align: center;
     border-radius: 5px;
     transition: all 0.3s ease;
     margin-top: 0; 
-    white-space: nowrap; /* Keeps text on one line */
+    white-space: nowrap; /* Keeps text on one line AI*/
 }
 
 .present-button:hover {
     background-color: #e0e0e0;
     transform: translateY(-2px);
 }
-/* Responsive fix for mobile: stack them on top of each other */
+/* Responsive fix for mobile: stack them on top of each other AI*/
 @media (max-width: 768px) {
     .split-nav {
         flex-direction: column;
